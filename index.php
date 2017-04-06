@@ -9,7 +9,12 @@
 </head>
 
 <body>
-
+<?php
+	include ("conection.php");
+	/*$conction=$base->query("SELECT * FROM DADOS_USUARIOS");
+	$registros=$conection->fetchAll (PDO::FETCH_OBJ);*/
+	$registros=$base->query("SELECT * FROM DADOS_USUARIOS")->fetchAll (PDO::FETCH_OBJ);
+?>
 
 <h1>CRUD<span class="subtitulo">Create Read Update Delete</span></h1>
 
